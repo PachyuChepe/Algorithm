@@ -7,11 +7,11 @@ console.log('File path:', filePath); // 경로 출력
 
 try {
   // 파일 내용 읽기
-  const data = fs.readFileSync(filePath, 'utf8');
-  console.log(data);
+  const input = fs.readFileSync(filePath, 'utf8');
+  console.log(input);
 
   // 파일 내용 파싱 (공백 기준으로 분리)
-  const numbers = data.split(' ').map(Number); // 숫자로 변환
+  const numbers = input.split(' ').map(Number); // 숫자로 변환
 
   // 변수 A와 B에 값 할당
   const A = numbers[0];
